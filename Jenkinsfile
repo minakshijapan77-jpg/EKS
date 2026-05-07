@@ -8,11 +8,10 @@ pipeline {
             description: 'Select the action to perform'
         )
     }
-
-    stages {
+stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/minakshijapan77-jpg/EKS.git'
+                git branch: 'main', url: 'https://github.com/minakshijapan77-jpg/EKS.git'
             }
         }
     
